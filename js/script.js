@@ -1,8 +1,25 @@
-$(function () {
-    var modalGossip = document.getElementById('modalgossip');
-    var modal = new bootstrap.Modal(modalGossip);
-    modal.show();
+// $(function () {
+//     var modalGossip = document.getElementById('modalgossip');
+//     var modal = new bootstrap.Modal(modalGossip);
+//     modal.show();
+// });
+
+window.addEventListener('scroll', () => {
+    const scroll = document.querySelector('.back-to-top');
+    if (window.scrollY > 100) {
+      scroll.classList.add("active");
+    } else {
+      scroll.classList.remove("active");
+    }
 });
+
+document.querySelector('.back-to-top').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})
+
 
 $(function () {
     "use strict";

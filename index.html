@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/themify-icons.css" />
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="css/style.css" rel="stylesheet" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 </head>
@@ -17,15 +18,15 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
 
   <!-- MODAL  -->
-  <div class="modal fade" id="modalgossip" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+  <div class="modal fade" id="modalgossip" tabindex="-1" role="dialog"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <img class="outubrorosa" src="images/outubrorosa.png" alt="" />
+          <img class="outubrorosa" src="images/nov_azul.png" alt="" />
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn orbutton" data-dismiss="modal">
+          <button type="button" class="btn nabutton" data-dismiss="modal">
             Fechar
           </button>
         </div>
@@ -36,16 +37,19 @@
 
   <!-- NAV -->
   <div class="nav-menu fixed-top">
+    <div class="line"></div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <nav class="navbar navbar-dark navbar-expand-sm">
             <a class="navbar-brand" href="index.html">
-              <img src="images/logo-light.png" alt="logo" class="nav-logo img-fluid" />
+              <img src="images/logo.png" alt="logo" class="nav-logo img-fluid" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
               aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+                <span class="ti-menu"></span>
+              </span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav ml-auto">
@@ -62,7 +66,7 @@
                   <a class="nav-link" href="#equipe">EQUIPE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contato">?</a>
+                  <a class="nav-link" href="#sobre">SOBRE NÓS</a>
                 </li>
               </ul>
             </div>
@@ -74,7 +78,7 @@
   <!-- FIM NAV -->
 
   <!-- BANNER -->
-  <header id="home">
+  <header id="home" data-aos="fade-up">
     <div class="home">
       <div class="home-left">
         <h1 class="title">O MELHOR PODCAST DE FOFOCAS!</h1>
@@ -82,7 +86,7 @@
           Aqui você além de se divertir escutando nossos podcasts você fica
           por dentro de tudo no mundo da fofoca. Incrível né?
         </p>
-        <button class="gossip-btn">ASSISTIR</button>
+        <button class="gossip-btn">AINDA INDISPONÍVEL</button>
       </div>
       <div class="home-right">
         <div class="img-holder mt-3">
@@ -94,35 +98,58 @@
   <!-- FIM BANNER  -->
 
   <!-- EPISODIOS -->
-  <div class="section episodios" id="episodios">
+  <div class="section episodios" id="episodios" data-aos="fade-up">
     <div class="section-title">
       <small class="title">Episódios</small>
       <h3 class="desc">Muita fofoca por aqui</h3>
     </div>
-    <div class="gossip-video">
-      <h1>EM BREVE...</h1>
-      <!-- <span class="video-title">TITULO</span> -->
-      <!-- <iframe src="https://www.youtube.com/embed/"> </iframe> -->
+    <div class="sobre-area">
+      <div class="sobre-area-left">
+        <img src="images/podbanner.png" class="banner-episodio" alt="banner">
+      </div>
+      <div class="sobre-area-right">
+        <div class="episodio-desc">
+          <h1 class="desc-title">Conhecendo as profissões</h1>
+          <div class="desc-hosts">
+            <div class="hots-left">
+              <img src="images/equipe/Apresentadores.jpg" width="50" height="50" alt="">
+            </div>
+            <div class="hosts-right">
+              <span class="hosts">Apresentado por</span>
+              <span class="userhost">Gabriela & Jaqueline</span>
+            </div>
+          </div>
+          <div class="desc-desc">Podcast apresentado por alunos do senai, com
+            participação do professor Edemilson Andrade</div>
+          <div class="button-assistir">EM BREVE</div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- FIM EPISODIOS -->
 
   <!-- GALERIA -->
-  <div class="section" id="galeria">
+  <div class="section" id="galeria" data-aos="fade-up">
     <div class="section-title">
       <small class="title">Galeria</small>
       <h3 class="desc">Fotos registradas durante o Podcast</h3>
     </div>
     <div class="img-gallery owl-carousel owl-theme">
-      <img src="images/galeria/1.png" alt="image" />
-      <img src="images/galeria/2.png" alt="image" />
-      <img src="images/galeria/3.png" alt="image" />
+      <img src="images/galeria/0.jpg" alt="image" />
+      <img src="images/galeria/1.jpg" alt="image" />
+      <img src="images/galeria/2.jpg" alt="image" />
+      <img src="images/galeria/3.jpg" alt="image" />
+      <img src="images/galeria/4.jpg" alt="image" />
+      <img src="images/galeria/5.jpg" alt="image" />
+      <img src="images/galeria/6.jpg" alt="image" />
+      <img src="images/galeria/7.jpg" alt="image" />
+      <img src="images/galeria/8.jpg" alt="image" />
     </div>
   </div>
   <!-- FIM GALERIA -->
 
   <!-- EQUIPE -->
-  <div class="section light-bg" id="equipe">
+  <div class="section light-bg" id="equipe" data-aos="fade-up">
     <div class="section-title">
       <small class="title">Equipe</small>
       <h3 class="desc">Todos os membros participantes do grupo</h3>
@@ -130,77 +157,109 @@
 
     <div class="testimonials owl-carousel">
       <div class="pessoas-single">
-        <img src="images/equipe/leticia.png" alt="client" class="client-img" />
-        <h5 class="mt-4 mb-2">Letícia Gonçalves Borne</h5>
+        <img src="images/equipe/Leticia.jpg" alt="client" class="client-img" />
+        <h5 class="mt-4 mb-2">Letícia</h5>
         <blockquote class="descricao">
           Responsável pelo setor de Marketing e Desenvolvimento do Site
         </blockquote>
       </div>
       <div class="pessoas-single">
-        <img src="images/equipe/leticia.png" alt="client" class="client-img" />
-        <h5 class="mt-4 mb-2">Letícia Gonçalves Borne</h5>
+        <img src="images/equipe/Jaqueline.jpeg" alt="client" class="client-img" />
+        <h5 class="mt-4 mb-2">Jaqueline</h5>
         <blockquote class="descricao">
-          Responsável pelo setor de Marketing e Desenvolvimento do Site
+          Responsável por Apresentar
         </blockquote>
       </div>
       <div class="pessoas-single">
-        <img src="images/equipe/leticia.png" alt="client" class="client-img" />
-        <h5 class="mt-4 mb-2">Letícia Gonçalves Borne</h5>
+        <img src="images/equipe/Gabriela.jpeg" alt="client" class="client-img" />
+        <h5 class="mt-4 mb-2">Gabriela</h5>
         <blockquote class="descricao">
-          Responsável pelo setor de Marketing e Desenvolvimento do Site
+          Responsável por Apresentar
+        </blockquote>
+      </div>
+      <div class="pessoas-single">
+        <img src="images/equipe/Leonan.jpeg" alt="client" class="client-img" />
+        <h5 class="mt-4 mb-2">Leonan</h5>
+        <blockquote class="descricao">
+          Responsável pela Edição de Vídeo
+        </blockquote>
+      </div>
+      <div class="pessoas-single">
+        <img src="images/equipe/Tiago.jpeg" alt="client" class="client-img" />
+        <h5 class="mt-4 mb-2">Tiago</h5>
+        <blockquote class="descricao">
+          Responsável pelas Câmeras
         </blockquote>
       </div>
     </div>
   </div>
   <!-- FIM EQUIPE -->
 
-  <div class="section" id="contato">
+  <!-- INICIO SOBRE -->
+  <div class="section" id="sobre" data-aos="fade-up">
     <div class="section-title">
-      <!-- <small class="title">AREA NOVA</small> -->
-      <h3 class="desc">EM BREVE...</h3>
+      <small class="title">Sobre nós</small>
+      <h3 class="desc">Conheça um pouco sobre nosso projeto</h3>
     </div>
-  </div>
-
-  <!-- <div class="light-bg py-5" id="contact">    AREA DESATIVADA PARA FUTURAS ATUALIZAÇÕES
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 text-center text-lg-left">
-            <div>
-              <p class="mb-2">
-                <span class="ti-email mr-2"></span>
-                <a class="mr-4" href="mailto:pod.gossip1@gmail.com"
-                  >pod.gossip1@gmail.com</a
-                >
-              </p>
-            </div>
-            <div>
-              <p class="mb-0">
-                <span class="ti-headphone-alt mr-2"></span>
-                <a href="tel:+5549989205306">(49) 98920-5306</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="social-icons">
-              <a href="#"><span class="ti-youtube"></span></a>
-              <a href="#"><span class="ti-instagram"></span></a>
-            </div>
+    <div class="sobre-area">
+      <div class="sobre-area-left">
+        <img src="images/sobre.png" class="banner-sobre" alt="banner">
+      </div>
+      <div class="sobre-area-right">
+        <div class="sobre-desc">
+          <h1 class="desc-title">Sobre nós</h1>
+          <div class="desc-desc">O Podgossip é uma empresa de fofoca, surgiu para evitar a falta de informações na área
+            de Campos
+            Novos, pois muitas pessoas estavam sendo afetadas. Dentro dessa realidade, buscamos interagir de forma
+            próxima e em
+            total parceria com nossos ouvintes, desenvolvendo estratégias com foco nas fofocas – pois sabemos que,
+            qualquer
+            informação, é muito importante. Somos pioneiras em Santa Catarina em cobertura de entretenimento,
+            professores, alunos
+            e pedagógico, nosso primeiro ano de história entendemos a responsabilidade e o impacto de nossas
+            publicações. E nós
+            temos interesse em compartilhá-los com você.</div>
+          <div class="sociais">
+            <a class="sociais-icon" target="_blank" href="https://podgossip.netlify.app/"><span
+                class="ti-world"></span></a>
+            <a class="sociais-icon" target="_blank"
+              href="https://www.youtube.com/channel/UCAKs_rc7N3z-Y0PKOreqfVw"><span class="ti-youtube"></span></a>
+            <a class="sociais-icon" target="_blank" href="http://instagram.com/pod.gossip"><span
+                class="ti-instagram"></span></a>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+  </div>
+  <!-- FIM SOBRE -->
 
-  <footer class="my-5 text-center">
+  <footer class="my-5 text-center" data-aos="fade-up">
     <p class="mb-1">
-      <small class="footer-text">TODOS OS DIREITOS AUTORAIS RESERVADOS A
-        <a href="http://instagram.com/pod.gossip" target="_blank">POD GOSSIP</a>
+      <small class="footer-text">
+        <span class="apoio">APOIO</span>
+        <a href="https://sc.senai.br/" target="_blank"><img class="senai" src="images/senai.png" alt="logo senai"
+            width="150"></a>
+        <br />
+        TODOS OS DIREITOS AUTORAIS RESERVADOS A
+        <a class="podgossip" href="http://instagram.com/pod.gossip" target="_blank">POD GOSSIP</a>
         ©</small>
     </p>
   </footer>
 
+  <div class="back-to-top">
+    <img src="images/subir.png" alt="subir">
+  </div>
+
+
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
   <script src="js/script.js"></script>
 </body>
 
